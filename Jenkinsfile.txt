@@ -1,0 +1,19 @@
+pipeline{
+    stages{
+        stage('build and test'){
+            steps{
+                echo 'build and test successful'
+            }
+        }
+        stage('generate artifact'){
+            steps{
+                echo 'hello'
+            }
+        }
+    }
+    post{
+        success{
+            echo 'ci and cd implemented'
+        }
+    }
+}
